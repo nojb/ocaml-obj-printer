@@ -169,7 +169,7 @@ let rec block x =
           if Obj.is_int x then
             Printf.sprintf "%d" (Obj.obj x)
           else
-            Printf.sprintf "[%d]" i
+            ""
         )
     else if tag = Obj.double_tag then
       [Printf.sprintf "%F" (Obj.double_field x 0)]
